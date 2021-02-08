@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  div(class="container")
+    table(class='table')
+      thead
+        tr
+          th #
+          th Plate
+          th Date Entree
+          th Date Sortie
+      tbody
+        each val in parks
+          tr
+            td= val.id
+            td= val.plate
+            td= val.dateEntree
+            td= val.dateSortie

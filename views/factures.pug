@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  div(class="container")
+    table(class='table')
+      thead
+        tr
+          th #
+          th #park
+          th Prix
+          th date Paiement
+      tbody
+        each val in factures
+          tr
+            td= val.id
+            td= val.parkId
+            td= val.price
+            td= val.datePayment
