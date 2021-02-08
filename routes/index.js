@@ -29,7 +29,7 @@ Facture.init({
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Parking Intelligent' });
 });
 
 router.get('/parks', async (req, res, next) => {
